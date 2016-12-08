@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			@charset "utf-8";
+			body,
+			ul,
+			ol,
+			dl,
+			li,
+			dt,
+			dd,
+			p,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			img,
+			a,
+			input {
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul,
+			ol {
+				list-style: none;
+			}
+			/* CSS Document */
+			
+			img {
+				border: 0;
+				display: block;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #909090;
+			}
+			
+			a:hover {
+				color: #a90a0a;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				font-size: 12px;
+				line-height: 24px;
+				font-family: "微软雅黑";
+				color: #3e3e3e;
+			}
+			
+			#content {
+				width: 100%;
+				height: 100%;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+			}
+			
+			#wrapper {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				-webkit-box-flex: 1;
+			}
+			
+			header {
+				width: 16rem;
+				height: 1.835rem;
+				background: url(img/return.gif) no-repeat 0.725rem 0.469rem;
+				background-size: 0.427rem 0.853rem;
+				background-color: #fffbf5;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 999;
+			}
+			
+			header .hotpoint {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1.2rem;
+				height: 1.835rem;
+				background: #fffbf5;
+				opacity: 0;
+			}
+			
+			header p {
+				height: 1.835rem;
+				line-height: 1.835rem;
+				font-size: 0.68rem;
+				text-align: center;
+			}
+			
+			#banner {
+				width: 16rem;
+				height: 19.63rem;
+				background-image: url(img/02-1分享有礼-分享页_02@2x.png);
+				background-repeat: no-repeat;
+				background-size: 16rem 11.22rem;
+				background-color: #f43155;
+				margin-top: 1.835rem;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#banner .yizhen_logo {
+				position: absolute;
+				width: 4.18rem;
+				height: 2.56rem;
+				left: 5.91rem;
+				top: 0.85rem;
+				background-image: url(img/logo.jpg);
+				background-size: 4.18rem 2.56rem;
+			}
+			
+			#banner .inp1 {
+				border: 0;
+				border-radius: 6px;
+				width: 11.95rem;
+				height: 1.88rem;
+				display: block;
+				margin: 0 auto;
+				margin-top: 12.76rem;
+				color: #FFB400;
+				padding-left: 0.75rem;
+				font-size: 0.619rem;
+				outline: none;
+			}
+			
+			#banner .inp2 {
+				border: 0;
+				border-radius: 6px;
+				width: 11.95rem;
+				height: 1.88rem;
+				display: block;
+				margin: 0 auto;
+				margin-top: 0.427rem;
+				color: #FFB400;
+				padding-left: 0.75rem;
+				font-size: 0.619rem;
+				outline: none;
+			}
+			
+			#banner .inp3 {
+				border: 0;
+				border-radius: 6px;
+				width: 12.65rem;
+				height: 1.88rem;
+				display: block;
+				margin: 0 auto;
+				margin-top: 0.427rem;
+				background: #FFB400;
+				color: #fff;
+				font-size: 0.725rem;
+				font-weight: bold;
+				outline: none;
+			}
+			
+			#banner .btn1 {
+				position: absolute;
+				BORDER: 0;
+				width: 3.16rem;
+				height: 1.408rem;
+				border-radius: 6px;
+				background: #FFB400;
+				top: 13.01rem;
+				left: 10.796rem;
+				color: #FFF;
+				font-size: 0.469rem;
+				outline: none;
+			}
+			
+			#banner1 {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#banner1 .ban_yizhen {
+				width: 16rem;
+				height: 2.197rem;
+				background-image: url(img/yizhenjia.jpg);
+				background-size: 16rem 2.197rem;
+			}
+			
+			#banner1 .ban1_yizhen {
+				width: 14.61rem;
+				height: 14.38rem;
+				margin: 0 auto;
+			}
+			
+			#banner1 .ban1_yizhen .ban1 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(img/yuesao.jpg);
+				background-size: 6.912rem 6.912rem;
+				margin-right: 0.786rem;
+				margin-bottom: 0.45rem;
+			}
+			
+			#banner1 .ban1_yizhen .ban2 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(img/baby.jpg);
+				background-size: 6.912rem 6.912rem;
+				margin-bottom: 0.45rem;
+			}
+			
+			#banner1 .ban1_yizhen .ban3 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(img/xiufu.jpg);
+				background-size: 6.912rem 6.912rem;
+				margin-right: 0.786rem;
+			}
+			
+			#banner1 .ban1_yizhen .ban4 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(img/huisuo.jpg);
+				background-size: 6.912rem 6.912rem;
+			}
+			
+			#inp_btn {
+				border: 0;
+				width: 11.95rem;
+				height: 2.13rem;
+				color: #fff;
+				font-size: 0.64rem;
+				background: #d71935;
+				border-radius: 6px;
+				display: block;
+				margin: 0 auto;
+				margin-top: 1rem;
+				margin-bottom: 0.768rem;
+				outline: none;
+			}
+			
+			.end_yizhen {
+				width: 100%;
+				height: 1.56rem;
+			}
+			/*********************************************************在320~414即iphone5~6P竖屏时显示**********************************************************/
+			
+			@media only screen and (min-width:320px) and (max-width:559px) {
+				#banner {
+					width: 16rem;
+					height: 19.63rem;
+					background-image: url(img/02-1分享有礼-分享页_02.png);
+					background-repeat: no-repeat;
+					background-size: 16rem 11.22rem;
+					background-color: #f43155;
+					margin-top: 1.835rem;
+					overflow: hidden;
+					position: relative;
+				}
+			}
+			/*********************************************************在560~760即iphone5~6P横屏时显示**********************************************************/
+			
+			@media only screen and (min-width:560px) and (max-width:760px) {
+				#banner {
+					width: 16rem;
+					height: 19.63rem;
+					background-image: url(img/02-1分享有礼-分享页_02@2x.png);
+					background-repeat: no-repeat;
+					background-size: 16rem 11.22rem;
+					background-color: #f43155;
+					margin-top: 1.835rem;
+					overflow: hidden;
+					position: relative;
+				}
+			}
+			/*********************************************************在大于768即ipad竖屏时显示**********************************************************/
+			
+			@media only screen and (min-width:768px) {
+				#banner {
+					width: 16rem;
+					height: 19.63rem;
+					background-image: url(img/02-1分享有礼-分享页_02@3x.png);
+					background-repeat: no-repeat;
+					background-size: 16rem 11.22rem;
+					background-color: #f43155;
+					margin-top: 1.835rem;
+					overflow: hidden;
+					position: relative;
+				}
+			}
+			/***************解决在qq浏览器下fixed失效回弹卡顿效果**********************************/
+			
+			#content .list {
+				-webkit-transform: translateZ(0);
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="hotpoint"></div>
+			<p>新人红包</p>
+		</header>
+		<section id="content">
+			<section id="wrapper">
+				<section class="list">
+					<section id="banner">
+						<input id="mobile" class="inp1" type="text" value="请输入您的手机号" />
+						<input class="inp2" type="text" value="请输入验证码" />
+						<input class="inp3" type="button" value="立即领取" />
+						<input type="button" id="btnSendCode" class="btn1" value="发送验证码" />
+						<section class="yizhen_logo"></section>
+					</section>
+					<section id="banner1">
+						<section class="ban_yizhen"></section>
+						<section class="ban1_yizhen">
+							<section class="ban1"></section>
+							<section class="ban2"></section>
+							<section class="ban3"></section>
+							<section class="ban4"></section>
+						</section>
+					</section>
+					<input id="inp_btn" type="button" value="立即下载亦蓁家APP体验更多优惠" />
+					<section class="end_yizhen"></section>
+				</section>
+			</section>
+		</section>
+	</body>
+	<script src="js/zepto.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script type="text/javascript">
+		(function($) {
+			/* 长宽占位 rem算法, 根据root的rem来计算各元素相对rem, 默认html 320/16 = 20px */
+			function placeholderPic() {
+				var w = document.documentElement.offsetWidth;
+				document.documentElement.style.fontSize = w / 16 + 'px';
+			}
+			placeholderPic();
+			window.onresize = function() {
+					placeholderPic();
+				}
+				/*iscroll执行函数*/
+			function Scroll() {
+				myScroll = new IScroll("#wrapper", {
+					preventDefault: false, //默认true,改为false，阻止默认为false就能点击input(默认)
+					tap: true //默认false，防止误触
+				})
+			}
+			Scroll();
+
+			/*顶上返回*/
+			$(".hotpoint").click(function() {
+					window.location.href = "a01-1.html"
+				})
+				/*输入手机号*/
+			$(".inp1").bind("focus", function() {
+					$(this).val("")
+				})
+				/*输入验证码*/
+			$(".inp2").bind("focus", function() {
+					$(this).val("")
+				})
+				/*立即领取*/
+			$(".inp3").click(function() {
+					window.location.href = "a02-2.html"
+				})
+				/*发送验证码*/
+				/*			$(".btn1").click(function(){
+								clearInterval(timer);
+								var val = $(this).val();
+								var _this = $(this)
+								val=60;
+								var timer = setInterval(function(){
+									val--;	
+									_this.val(val)
+									if(_this.val()==-1){
+										clearInterval(timer);
+										_this.val("发送验证码").css({"background":"#FFB400"})
+									}
+								},1000)
+								$(this).css({"opacity":"0.8","background":"#ccc"})
+								
+								$.ajax({
+										url:"http://mobile.api-test.yizhenjia.com/share/getCode",
+										success:function(data){
+											
+										}
+								})
+							})*/
+/********************************这里到最后是短信验证*********************************************/
+			$(".btn1").click(function() {
+				sendMessage()
+			})
+			var InterValObj; //timer变量，控制时间  
+			var count = 60; //间隔函数，1秒执行  
+			var curCount; //当前剩余秒数  
+
+			function sendMessage() {
+				var mobile = document.getElementById("mobile").value;
+				//validatemobile(mobile);//调用上边的方法验证手机号码的正确性  
+				if(mobile.length == 0) {
+					alert('请输入手机号码！');
+					// document.form1.mobile.focus();  
+					return false;
+				} else if(mobile.length != 11) {
+					alert('请输入有效的手机号码！');
+					//document.form1.mobile.focus();  
+					return false;
+				} else if(!(/^1[34578]\d{9}$/.test(mobile))) {
+					alert("手机号码有误，请重填");
+					return false;
+				} else {
+					YanZhengMa()
+				}
+
+				function YanZhengMa() {
+					curCount = count;　　 //设置button效果，开始计时  
+					$("#btnSendCode").attr("disabled", "true"); //button失效
+					$("#btnSendCode").val("请在" + curCount + "秒内输入验证码").css({
+						"opacity": "0.8",
+						"background": "#ccc"
+					});
+					InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次  
+
+					　　 //向后台发送处理数据  
+					$.ajax({　　
+						type: "post", //用POST方式传输     　　  
+						　　url: 'http://mobile.api-test.yizhenjia.com/share/getCode', //目标地址.  
+						dataType: "json", //数据格式:JSON  
+						//data: "&a="+mobile,  
+						data: "phone=" + mobile,
+						　　success: function(data) {
+							if(data.code == 0) { //成功的处理  
+								console.log(data.code);
+							} else if(data.code != 0) { //失败的处理  
+								alert(data.errorMsg);
+								console.log(data.errorMsg);
+							}
+						}
+					});
+
+				}
+
+			}
+//sendMassage结束
+
+//timer处理函数  
+			function SetRemainTime() {
+				if(curCount == 0) {
+					window.clearInterval(InterValObj); //停止计时器  
+					$("#btnSendCode").removeAttr("disabled"); //启用按钮  
+					$("#btnSendCode").val("重发验证码").css({
+						"background": "#FFB400"
+					});
+				} else {
+					curCount--;
+					$("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+				}
+			}
+//输入正则判断
+			function validatemobile(mobile) {
+				if(mobile.length == 0) {
+					alert('请输入手机号码！');
+					// document.form1.mobile.focus();  
+					return false;
+				}
+				if(mobile.length != 11) {
+					alert('请输入有效的手机号码！');
+					//document.form1.mobile.focus();  
+					return false;
+				}
+
+				if(!(/^1[34578]\d{9}$/.test(mobile))) {
+					alert("手机号码有误，请重填");
+					return false;
+				}
+			}
+		})(Zepto)
+	</script>
+
+</html>
