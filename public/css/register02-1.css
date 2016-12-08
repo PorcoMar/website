@@ -1,0 +1,312 @@
+			@charset "utf-8";
+			body,
+			ul,
+			ol,
+			dl,
+			li,
+			dt,
+			dd,
+			p,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			img,
+			a,
+			input {
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul,
+			ol {
+				list-style: none;
+			}
+			/* CSS Document */
+			
+			img {
+				border: 0;
+				display: block;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #909090;
+			}
+			
+			a:hover {
+				color: #a90a0a;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				font-size: 12px;
+				line-height: 24px;
+				font-family: "微软雅黑";
+				color: #3e3e3e;
+			}
+			
+			#content {
+				width: 100%;
+				height: 100%;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+			}
+			
+			#wrapper {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				-webkit-box-flex: 1;
+			}
+			
+			header {
+				width: 16rem;
+				height: 1.835rem;
+				background: url(../img/return.gif) no-repeat 0.725rem 0.469rem;
+				background-size: 0.427rem 0.853rem;
+				background-color: #fffbf5;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 999;
+			}
+			
+			header .hotpoint {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1.2rem;
+				height: 1.835rem;
+				background: #fffbf5;
+				opacity: 0;
+			}
+			
+			header p {
+				height: 1.835rem;
+				line-height: 1.835rem;
+				font-size: 0.68rem;
+				text-align: center;
+			}
+			
+			#banner {
+				width: 16rem;
+				height: 19.63rem;
+				background-image: url(../img/02-1分享有礼-分享页_02@2x.png);
+				background-repeat: no-repeat;
+				background-size: 16rem 11.22rem;
+				background-color: #f43155;
+				margin-top: 1.835rem;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#banner .yizhen_logo {
+				position: absolute;
+				width: 4.18rem;
+				height: 2.56rem;
+				left: 5.91rem;
+				top: 0.85rem;
+				background-image: url(../img/logo.jpg);
+				background-size: 4.18rem 2.56rem;
+			}
+			
+			#banner .inp1 {
+				border: 0;
+				border-radius: 6px;
+				width: 11.95rem;
+				height: 1.88rem;
+				display: block;
+				margin: 0 auto;
+				margin-top: 12.76rem;
+				color: #FFB400;
+				padding-left: 0.75rem;
+				font-size: 0.619rem;
+				outline: none;
+			}
+			
+			#banner .inp2 {
+				border: 0;
+				border-radius: 6px;
+				width: 11.95rem;
+				height: 1.88rem;
+				display: block;
+				margin: 0 auto;
+				margin-top: 0.427rem;
+				color: #FFB400;
+				padding-left: 0.75rem;
+				font-size: 0.619rem;
+				outline: none;
+			}
+			
+			#banner .inp3 {
+				border: 0;
+				border-radius: 6px;
+				width: 12.65rem;
+				height: 1.88rem;
+				display: block;
+				margin: 0 auto;
+				margin-top: 0.427rem;
+				background: #FFB400;
+				color: #fff;
+				font-size: 0.725rem;
+				font-weight: bold;
+				outline: none;
+			}
+			
+			#banner .btn1 {
+				position: absolute;
+				BORDER: 0;
+				width: 3.16rem;
+				height: 1.408rem;
+				border-radius: 6px;
+				background: #FFB400;
+				top: 13.01rem;
+				left: 10.796rem;
+				color: #FFF;
+				font-size: 0.469rem;
+				outline: none;
+			}
+			#banner .float1 {
+				width: 8.576rem;
+				height: 1.536rem;
+				border: 0;
+				border-radius: 6px;
+				position: absolute;
+				top: 13.86rem;
+				left: 3.82rem;
+				font-size: 0.68rem;
+				color: #4f4f4f;
+				background: #fff;
+				opacity: 0.9;
+				z-index: 999;
+				display:none;
+			}			
+			
+			#banner1 {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#banner1 .ban_yizhen {
+				width: 16rem;
+				height: 2.197rem;
+				background-image: url(../img/yizhenjia.jpg);
+				background-size: 16rem 2.197rem;
+			}
+			
+			#banner1 .ban1_yizhen {
+				width: 14.61rem;
+				height: 14.38rem;
+				margin: 0 auto;
+			}
+			
+			#banner1 .ban1_yizhen .ban1 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(../img/yuesao.jpg);
+				background-size: 6.912rem 6.912rem;
+				margin-right: 0.786rem;
+				margin-bottom: 0.45rem;
+			}
+			
+			#banner1 .ban1_yizhen .ban2 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(../img/baby.jpg);
+				background-size: 6.912rem 6.912rem;
+				margin-bottom: 0.45rem;
+			}
+			
+			#banner1 .ban1_yizhen .ban3 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(../img/xiufu.jpg);
+				background-size: 6.912rem 6.912rem;
+				margin-right: 0.786rem;
+			}
+			
+			#banner1 .ban1_yizhen .ban4 {
+				float: left;
+				width: 6.912rem;
+				height: 6.912rem;
+				background: url(../img/huisuo.jpg);
+				background-size: 6.912rem 6.912rem;
+			}
+			
+			#inp_btn {
+				border: 0;
+				width: 11.95rem;
+				height: 2.13rem;
+				color: #fff;
+				font-size: 0.64rem;
+				background: #d71935;
+				border-radius: 6px;
+				display: block;
+				margin: 0 auto;
+				margin-top: 1rem;
+				margin-bottom: 0.768rem;
+				outline: none;
+			}
+			
+			.end_yizhen {
+				width: 100%;
+				height: 1.56rem;
+			}
+			/*********************************************************在320~414即iphone5~6P竖屏时显示**********************************************************/
+			
+			@media only screen and (min-width:320px) and (max-width:559px) {
+				#banner {
+					width: 16rem;
+					height: 19.63rem;
+					background-image: url(../img/02-1分享有礼-分享页_02.png);
+					background-repeat: no-repeat;
+					background-size: 16rem 11.22rem;
+					background-color: #f43155;
+					margin-top: 1.835rem;
+					overflow: hidden;
+					position: relative;
+				}
+			}
+			/*********************************************************在560~760即iphone5~6P横屏时显示**********************************************************/
+			
+			@media only screen and (min-width:560px) and (max-width:760px) {
+				#banner {
+					width: 16rem;
+					height: 19.63rem;
+					background-image: url(../img/02-1分享有礼-分享页_02@2x.png);
+					background-repeat: no-repeat;
+					background-size: 16rem 11.22rem;
+					background-color: #f43155;
+					margin-top: 1.835rem;
+					overflow: hidden;
+					position: relative;
+				}
+			}
+			/*********************************************************在大于768即ipad竖屏时显示**********************************************************/
+			
+			@media only screen and (min-width:768px) {
+				#banner {
+					width: 16rem;
+					height: 19.63rem;
+					background-image: url(../img/02-1分享有礼-分享页_02@3x.png);
+					background-repeat: no-repeat;
+					background-size: 16rem 11.22rem;
+					background-color: #f43155;
+					margin-top: 1.835rem;
+					overflow: hidden;
+					position: relative;
+				}
+			}
+			/***************解决在qq浏览器下fixed失效回弹卡顿效果**********************************/
+			
+			#content .list {
+				-webkit-transform: translateZ(0);
+			}
