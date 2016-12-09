@@ -29,6 +29,7 @@
 			$(".inp2").bind("focus", function() {
 				$(this).val("").css("color", "#909090");
 			})
+/*验证终端跳转下载页面*/			
 			$("#inp_btn").click(function(){
 				var u = navigator.userAgent;
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
@@ -40,7 +41,7 @@
 				window.location.href="https://itunes.apple.com/us/genre/ios/id36?mt=8"
 				}
 				else{
-					alert("不支持您的手机")
+					alert("不支持您的系统")
 				}				
 			})
 			/*发送验证码*/
@@ -105,8 +106,7 @@
 					$.ajax({　　
 						type: "post",　　
 						url: 'http://mobile.api-test.yizhenjia.com/share/getCode', 
-						dataType: "json",  
-						//data: "&a="+mobile,  
+						dataType: "json", 
 						data: "phone=" + mobile,
 						　　success: function(data) {
 							if(data.code == 0) { //成功的处理  
@@ -159,7 +159,7 @@
 			$(".inp3").click(function() {
 				var code = $(".inp2").val()
 				var mobile = $(".inp1").val()
-				var trackId = Math.floor(Math.random()*1000)
+				var trackId = Math.floor(Math.random()*10000)
 
 //向后台发送处理数据  
 				$.ajax({　　
@@ -206,8 +206,6 @@
 						}
 					}
 				});
-			})
-//提交结束
 //获取url的参数				
 				 var Request = new Object();
 				 Request = GetRequest();
@@ -218,6 +216,8 @@
 				 code = Request["code"];
 				 trackId = Request["trackId"];
 				 console.log(Request,phone,code,trackId);				 
+			})
+//提交结束
 				function GetRequest() {   
 					var url = location.search; //获取url中"?"符后的字串
 				    var theRequest = new Object();   

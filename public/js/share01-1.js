@@ -46,7 +46,7 @@
 				         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
 				      }   
 				   }else{
-				   	console.log("?参数为空")
+				   	console.log("url..?参数为空")
 				   }
 				   return theRequest;   
 				} 
@@ -59,7 +59,6 @@
 					success:function(data){
 						console.log(data)
 						console.log(data.result)
-						console.log(data.result.share,data.result.shareReg,data.result.cash,data.result.shareRegCount,data.result.shareCount)
 						$("#share1 .p4").find(".sp1").html(data.result.shareCount)
 						$("#share1 .p4 .sp2").html(data.result.share).css({"color":"#00a3e2"})
 						$("#register1 .p4").find(".sp1").html(data.result.shareRegCount)
