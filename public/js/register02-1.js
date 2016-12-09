@@ -29,7 +29,20 @@
 			$(".inp2").bind("focus", function() {
 				$(this).val("").css("color", "#909090");
 			})
-
+			$("#inp_btn").click(function(){
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://android.myapp.com/"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/us/genre/ios/id36?mt=8"
+				}
+				else{
+					alert("不支持您的手机")
+				}				
+			})
 			/*发送验证码*/
 			/*			$(".btn1").click(function(){
 							clearInterval(timer);
@@ -82,7 +95,7 @@
 				function YanZhengMa() {
 					curCount = count;　　 //设置button效果，开始计时  
 					$("#btnSendCode").attr("disabled", "true"); //button失效
-					$("#btnSendCode").val("请在" + curCount + "秒内输入验证码").css({
+					$("#btnSendCode").val(curCount + "S").css({
 						"opacity": "0.8",
 						"background": "#ccc"
 					});
@@ -120,7 +133,7 @@
 					});
 				} else {
 					curCount--;
-					$("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+					$("#btnSendCode").val(curCount + "S");
 				}
 			}
 //输入正则判断
@@ -162,10 +175,17 @@
 					　　success: function(data) {
 						console.log(data)
 						if(data.code == 0) { //成功的处理  
-							alert("注册成功")
+							$(".float3").show()
+							setTimeout(show,1000);
+							function show(){
 							window.location.href = "success02-2.html"
+							}
 						} else if(data.code == "CM004") { //失败的处理  
-							alert("验证码错误");
+							var _val2 = $(".inp1").val();
+							$(".float2").show();
+							$("body").one("click", function() {
+								$(".float2").hide();
+							})
 						} else if(data.code == "CM006") { //已经抢过红包了
 							$(".float1").show();
 							window.clearInterval(InterValObj);

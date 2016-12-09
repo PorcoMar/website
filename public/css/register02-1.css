@@ -64,7 +64,7 @@
 				-webkit-box-flex: 1;
 			}*/
 			
-			header {
+/*			header {
 				width: 16rem;
 				height: 1.835rem;
 				background: url(../img/return.gif) no-repeat 0.725rem 0.469rem;
@@ -91,7 +91,7 @@
 				line-height: 1.835rem;
 				font-size: 0.68rem;
 				text-align: center;
-			}
+			}*/
 			
 			#banner {
 				width: 16rem;
@@ -100,7 +100,6 @@
 				background-repeat: no-repeat;
 				background-size: 16rem 11.22rem;
 				background-color: #f43155;
-				margin-top: 1.835rem;
 				overflow: hidden;
 				position: relative;
 			}
@@ -172,6 +171,36 @@
 				outline: none;
 			}
 			#banner .float1 {
+				width: 8.576rem;
+				height: 1.536rem;
+				border: 0;
+				border-radius: 6px;
+				position: absolute;
+				top: 13.86rem;
+				left: 3.82rem;
+				font-size: 0.68rem;
+				color: #4f4f4f;
+				background: #fff;
+				opacity: 0.9;
+				z-index: 999;
+				display:none;
+			}			
+			#banner .float2 {
+				width: 8.576rem;
+				height: 1.536rem;
+				border: 0;
+				border-radius: 6px;
+				position: absolute;
+				top: 13.86rem;
+				left: 3.82rem;
+				font-size: 0.68rem;
+				color: #4f4f4f;
+				background: #fff;
+				opacity: 0.9;
+				z-index: 999;
+				display:none;
+			}			
+			#banner .float3 {
 				width: 8.576rem;
 				height: 1.536rem;
 				border: 0;
@@ -270,7 +299,7 @@
 					background-repeat: no-repeat;
 					background-size: 16rem 11.22rem;
 					background-color: #f43155;
-					margin-top: 1.835rem;
+					/*margin-top: 1.835rem;*/
 					overflow: hidden;
 					position: relative;
 				}
@@ -285,7 +314,7 @@
 					background-repeat: no-repeat;
 					background-size: 16rem 11.22rem;
 					background-color: #f43155;
-					margin-top: 1.835rem;
+					/*margin-top: 1.835rem;*/
 					overflow: hidden;
 					position: relative;
 				}
@@ -300,7 +329,7 @@
 					background-repeat: no-repeat;
 					background-size: 16rem 11.22rem;
 					background-color: #f43155;
-					margin-top: 1.835rem;
+					/*margin-top: 1.835rem;*/
 					overflow: hidden;
 					position: relative;
 				}
