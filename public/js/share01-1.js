@@ -23,15 +23,43 @@
 	
 /********调数据*******/	
 			ajax();
-			function ajax(){					
+			function ajax(){
+				
+//获取url的参数				
+				 var Request = new Object();
+				 Request = GetRequest();
+				 var phone;
+				 var code;
+				 var trackId;
+				 phone = Request["phone"];
+				 code = Request["code"];
+				 trackId = Request["trackId"];
+				 console.log(Request,phone,code,trackId);				 
+//GetRequest函数
+				function GetRequest() {   
+					var url = location.search; //获取url中"?"符后的字串
+				    var theRequest = new Object();   
+				    if (url.indexOf("?") != -1) {   
+				      var str = url.substr(1);   
+				      strs = str.split("&");   
+				      for(var i = 0; i < strs.length; i ++) {   
+				         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+				      }   
+				   }else{
+				   	console.log("?参数为空")
+				   }
+				   return theRequest;   
+				} 
+//ajax获取				
 				$.ajax({
-					type:"get",
+					type:"post",
 					dataType:"json",
-					url:"http://mobile.api-test.yizhenjia.com/share/account?trackId",
+					url:"http://mobile.api-test.yizhenjia.com/share/account",
+					data:"trackId="+trackId,
 					success:function(data){
-//						console.log(data)
-//						console.log(data.result)
-//						console.log(data.result.share,data.result.shareReg,data.result.cash,data.result.shareRegCount,data.result.shareCount)
+						console.log(data)
+						console.log(data.result)
+						console.log(data.result.share,data.result.shareReg,data.result.cash,data.result.shareRegCount,data.result.shareCount)
 						$("#share1 .p4").find(".sp1").html(data.result.shareCount)
 						$("#share1 .p4 .sp2").html(data.result.share).css({"color":"#00a3e2"})
 						$("#register1 .p4").find(".sp1").html(data.result.shareRegCount)
@@ -52,7 +80,7 @@
 					success:function(data){
 			            if(data.code==0){//成功的处理  
 						console.log(data.code)			                
-						window.location.href="register02-1.html"
+						alert("分享到微信")
 			            }else{
 			            	alert(data.errorMsg)
 			            }

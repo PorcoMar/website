@@ -15,7 +15,7 @@
 					tap: true //默认false，防止误触
 				})
 			}
-			Scroll();
+			//Scroll();
 
 			/*顶上返回*/
 			$(".hotpoint").click(function() {
@@ -23,38 +23,37 @@
 				})
 				/*输入手机号*/
 			$(".inp1").bind("focus", function() {
-					$(this).val("").css("color","#909090");
+					$(this).val("").css("color", "#909090");
 				})
 				/*输入验证码*/
 			$(".inp2").bind("focus", function() {
-					$(this).val("").css("color","#909090");
+				$(this).val("").css("color", "#909090");
 			})
 
-
-				/*发送验证码*/
-				/*			$(".btn1").click(function(){
-								clearInterval(timer);
-								var val = $(this).val();
-								var _this = $(this)
-								val=60;
-								var timer = setInterval(function(){
-									val--;	
-									_this.val(val)
-									if(_this.val()==-1){
-										clearInterval(timer);
-										_this.val("发送验证码").css({"background":"#FFB400"})
+			/*发送验证码*/
+			/*			$(".btn1").click(function(){
+							clearInterval(timer);
+							var val = $(this).val();
+							var _this = $(this)
+							val=60;
+							var timer = setInterval(function(){
+								val--;	
+								_this.val(val)
+								if(_this.val()==-1){
+									clearInterval(timer);
+									_this.val("发送验证码").css({"background":"#FFB400"})
+								}
+							},1000)
+							$(this).css({"opacity":"0.8","background":"#ccc"})
+							
+							$.ajax({
+									url:"http://mobile.api-test.yizhenjia.com/share/getCode",
+									success:function(data){
+										
 									}
-								},1000)
-								$(this).css({"opacity":"0.8","background":"#ccc"})
-								
-								$.ajax({
-										url:"http://mobile.api-test.yizhenjia.com/share/getCode",
-										success:function(data){
-											
-										}
-								})
-							})*/
-/********************************这里到最后是短信验证*********************************************/
+							})
+						})*/
+			/********************************这里到最后是短信验证*********************************************/
 			$(".btn1").click(function() {
 				sendMessage()
 			})
@@ -63,7 +62,7 @@
 			var curCount; //当前剩余秒数  
 
 			function sendMessage() {
-			var mobile = document.getElementById("mobile").value;
+				var mobile = document.getElementById("mobile").value;
 				//validatemobile(mobile);//调用上边的方法验证手机号码的正确性  
 				if(mobile.length == 0) {
 					alert('请输入手机号码！');
@@ -89,19 +88,19 @@
 					});
 					InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次  
 
-					　　 //向后台发送处理数据  
+ //向后台传入phone参数  
 					$.ajax({　　
-						type: "post", //用POST方式传输     　　  
-						　　url: 'http://mobile.api-test.yizhenjia.com/share/getCode', //目标地址.  
-						dataType: "json", //数据格式:JSON  
+						type: "post",　　
+						url: 'http://mobile.api-test.yizhenjia.com/share/getCode', 
+						dataType: "json",  
 						//data: "&a="+mobile,  
 						data: "phone=" + mobile,
 						　　success: function(data) {
 							if(data.code == 0) { //成功的处理  
-								console.log(data,data.code);
+								console.log(data, data.code);
 							} else if(data.code != 0) { //失败的处理  
 								alert(data.errorMsg);
-								console.log(data,data.errorMsg);
+								console.log(data, data.errorMsg);
 							}
 						}
 					});
@@ -142,48 +141,76 @@
 					return false;
 				}
 			}
-	
-	
-	
-/*立即领取 提交*/			
-			$(".inp3").click(function(){
+
+/*立即领取 提交*/
+			$(".inp3").click(function() {
 				var code = $(".inp2").val()
 				var mobile = $(".inp1").val()
-				
-	//向后台发送处理数据  
-					$.ajax({　　
-						type: "post", 　　  
-						//url: 'http://mobile.api-test.yizhenjia.com/share/receive?code='+code+'&phone='+mobile+'&trackId=12', 					
-						url: 'http://mobile.api-test.yizhenjia.com/share/receive',  
-						dataType: "json", 
-						data:{
-							code:code,
-							phone:mobile,
-							trackId:'12'
-						}, 
-						　　success: function(data) {
-							console.log(data)
-							if(data.code == 0) { //成功的处理  
-								alert("注册成功")
-								window.location.href="success02-2.html"
-							} else if(data.code =="CM004") { //失败的处理  
-								alert("验证码错误");
-							}else if(data.code =="CM006") { //已经抢过红包了
-								$(".float1").show();
+				var trackId = Math.floor(Math.random()*1000)
+
+//向后台发送处理数据  
+				$.ajax({　　
+					type: "post",
+					//url: 'http://mobile.api-test.yizhenjia.com/share/receive?code='+code+'&phone='+mobile+'&trackId=12',
+					url: 'http://mobile.api-test.yizhenjia.com/share/receive',
+					dataType: "json",
+					data: {
+						code: code,
+						phone: mobile,
+						trackId: trackId
+					},
+					　　success: function(data) {
+						console.log(data)
+						if(data.code == 0) { //成功的处理  
+							alert("注册成功")
+							window.location.href = "success02-2.html"
+						} else if(data.code == "CM004") { //失败的处理  
+							alert("验证码错误");
+						} else if(data.code == "CM006") { //已经抢过红包了
+							$(".float1").show();
+							window.clearInterval(InterValObj);
+							$(".btn1").val("发送验证码").css({
+								"background": "#FFB400"
+							})
+							$("body").one("click", function() { //只执行一次
+								window.location.reload();
 								window.clearInterval(InterValObj);
-								$(".btn1").val("发送验证码").css({"background": "#FFB400"})								
-								$("body").one("click",function(){//只执行一次
-									window.location.reload();
-									window.clearInterval(InterValObj);
-									$(".float1").hide()
-									$(".inp1").val("请输入您的手机号")
-									$(".inp2").val("请输入验证码")
-									$(".btn1").val("发送验证码").css({"background": "#FFB400"})
-									
-								})								
-							}
+								$(".float1").hide()
+								$(".inp1").val("请输入您的手机号")
+								$(".inp2").val("请输入验证码")
+								$(".btn1").val("发送验证码").css({
+									"background": "#FFB400"
+								})
+
+							})
 						}
-					});				
+					}
+				});
 			})
-		
+//提交结束
+//获取url的参数				
+				 var Request = new Object();
+				 Request = GetRequest();
+				 var phone;
+				 var code;
+				 var trackId;
+				 phone = Request["phone"];
+				 code = Request["code"];
+				 trackId = Request["trackId"];
+				 console.log(Request,phone,code,trackId);				 
+				function GetRequest() {   
+					var url = location.search; //获取url中"?"符后的字串
+				    var theRequest = new Object();   
+				    if (url.indexOf("?") != -1) {   
+				      var str = url.substr(1);   
+				      strs = str.split("&");   
+				      for(var i = 0; i < strs.length; i ++) {   
+				         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+				      }   
+				   }else{
+				   	console.log("?后参数为空")
+				   }
+				   return theRequest;   
+				} 	
+								
 		})(Zepto)

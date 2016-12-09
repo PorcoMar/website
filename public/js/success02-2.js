@@ -15,9 +15,12 @@
 					tap: true //默认false，防止误触
 				})
 			}
-			Scroll();
+			//Scroll();
 
 			$(".hotpoint").click(function() {
 				window.location.href="register02-1.html"
+			})
+			$(".btn1").click(function() {
+				alert("立即使用")
 			})
 		})(Zepto)
