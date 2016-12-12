@@ -49,31 +49,16 @@
 				line-height: 24px;
 				font-family: "微软雅黑";
 				color: #3e3e3e;
-				overflow:-Scroll;
+				overflow-y:auto;
 				overflow-x:hidden;
 				-webkit-overflow-scrolling : touch;
 			}
-			
-/*			#content {
-				width: 100%;
-				height: 100%;
-				display: -webkit-box;
-				-webkit-box-orient: vertical;
-			}
-			
-			#wrapper {
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-				-webkit-box-flex: 1;
-			}*/
 
-			
 			#banner {
-				width: 16rem;
+				width: 100%;
 				height: 11.22rem;
 				background-image: url(../img/banner拷贝@2x.png);
-				background-size: 16rem 11.22rem;
+				background-size: 100% 11.22rem;
 				/*margin-top: 1.835rem;*/
 			}
 			
@@ -206,7 +191,7 @@
 			#service1 {
 				width: 15.104rem;
 				height: 9.941rem;
-				background-image: url(../img/4@2x.png);
+				background-image: url(../img/4.png);
 				background-size: 15.104rem 9.941rem;
 				margin: 0 auto;
 				margin-right: 0rem;
@@ -284,10 +269,10 @@
 /*********************************************************在320~414即iphone5~6P竖屏时显示**********************************************************/
 			@media only screen and (min-width:320px) and (max-width:559px){		
 				#banner {
-					width: 16rem;
+					width: 100%;
 					height: 11.22rem;
 					background-image: url(../img/banner拷贝.png);
-					background-size: 16rem 11.22rem;
+					background-size: 100% 11.22rem;
 					/*margin-top: 1.835rem;*/
 				}
 				#share1 {
@@ -322,7 +307,7 @@
 					width: 15.104rem;
 					height: 9.941rem;
 					background-image: url(../img/4.png);
-					background-size: 15.104rem 9.941rem;
+					background-size: 15.1rem 9.941rem;
 					margin: 0 auto;
 					margin-right: 0rem;
 					position: relative;
@@ -331,10 +316,10 @@
 /*********************************************************在560~760即iphone5~6P横屏时显示**********************************************************/
 			@media only screen and (min-width:560px) and (max-width:760px){		
 				#banner {
-					width: 16rem;
+					width: 100%;
 					height: 11.22rem;
 					background-image: url(../img/banner拷贝@2x.png);
-					background-size: 16rem 11.22rem;
+					background-size: 100% 11.22rem;
 					/*margin-top: 1.835rem;*/
 				}	
 				#share1 {
@@ -378,10 +363,10 @@
 /*********************************************************在大于768即ipad竖屏时显示**********************************************************/
 			@media only screen and (min-width:768px){		
 				#banner {
-					width: 16rem;
+					width: 100%;
 					height: 11.22rem;
 					background-image: url(../img/banner拷贝@3x.png);
-					background-size: 16rem 11.22rem;
+					background-size: 100% 11.22rem;
 					/*margin-top: 1.835rem;*/
 				}	
 				#share1 {
