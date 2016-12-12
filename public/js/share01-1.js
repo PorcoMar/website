@@ -71,7 +71,8 @@
 				$.ajax({
 					type:"get",
 					dataType:"json",
-					url:"http://mobile.api-test.yizhenjia.com/share/shareSuc?trackId",
+					url:"http://mobile.api-test.yizhenjia.com/share/shareSuc",
+					data:"trackId="+trackId,
 					success:function(data){
 			            if(data.code==0){//成功的处理  
 						console.log(data.code)			                
