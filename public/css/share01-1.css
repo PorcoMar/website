@@ -51,7 +51,7 @@
 				color: #3e3e3e;
 			}
 			
-			#content {
+/*			#content {
 				width: 100%;
 				height: 100%;
 				display: -webkit-box;
@@ -63,7 +63,7 @@
 				height: 100%;
 				overflow: hidden;
 				-webkit-box-flex: 1;
-			}
+			}*/
 			
 			header {
 				width: 16rem;
@@ -99,7 +99,7 @@
 				height: 11.22rem;
 				background-image: url(../img/banner拷贝@2x.png);
 				background-size: 16rem 11.22rem;
-				margin-top: 1.835rem;
+				/*margin-top: 1.835rem;*/
 			}
 			
 			#share1 {
@@ -313,7 +313,7 @@
 					height: 11.22rem;
 					background-image: url(../img/banner拷贝.png);
 					background-size: 16rem 11.22rem;
-					margin-top: 1.835rem;
+					/*margin-top: 1.835rem;*/
 				}
 				#share1 {
 					width: 14.165rem;
@@ -360,7 +360,7 @@
 					height: 11.22rem;
 					background-image: url(../img/banner拷贝@2x.png);
 					background-size: 16rem 11.22rem;
-					margin-top: 1.835rem;
+					/*margin-top: 1.835rem;*/
 				}	
 				#share1 {
 					width: 14.165rem;
@@ -407,7 +407,7 @@
 					height: 11.22rem;
 					background-image: url(../img/banner拷贝@3x.png);
 					background-size: 16rem 11.22rem;
-					margin-top: 1.835rem;
+					/*margin-top: 1.835rem;*/
 				}	
 				#share1 {
 					width: 14.165rem;
