@@ -49,6 +49,9 @@
 				line-height: 24px;
 				font-family: "微软雅黑";
 				color: #3e3e3e;
+				overflow:-Scroll;
+				overflow-x:hidden;
+				-webkit-overflow-scrolling : touch;
 			}
 			
 /*			#content {
@@ -64,35 +67,7 @@
 				overflow: hidden;
 				-webkit-box-flex: 1;
 			}*/
-			
-			header {
-				width: 16rem;
-				height: 1.835rem;
-				background: url(../img/return.gif) no-repeat 0.725rem 0.469rem;
-				background-size: 0.427rem 0.853rem;
-				background-color: #fffbf5;
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 999;
-			}
-			
-			header .hotpoint {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 1.2rem;
-				height: 1.835rem;
-				background: #fffbf5;
-				opacity: 0;
-			}
-			
-			header p {
-				height: 1.835rem;
-				line-height: 1.835rem;
-				font-size: 0.68rem;
-				text-align: center;
-			}
+
 			
 			#banner {
 				width: 16rem;
