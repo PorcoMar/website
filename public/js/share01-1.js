@@ -9,7 +9,7 @@
 		  		placeholderPic();
 		 	}	
 /*iscroll执行函数*/
-			Scroll();
+			/*Scroll();*/
 			function Scroll() { 
 				myScroll = new IScroll("#wrapper", {
 					preventDefault:false,

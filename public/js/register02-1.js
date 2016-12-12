@@ -208,6 +208,20 @@
 								})
 
 							})
+						}else if(data.code == "CM005"){
+							$(".float4").show();
+							$("body").one("click",function() {
+								$(".float4").hide();
+								window.clearInterval(InterValObj);
+								$(".float1").hide()
+								$(".inp1").val("请输入您的手机号")
+								$(".inp2").val("请输入验证码")
+								$(".btn1").val("发送验证码").css({
+									"background": "#FFB400"
+								})
+								window.location.reload(true);
+								
+							})
 						}
 					}
 				});

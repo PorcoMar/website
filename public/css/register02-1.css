@@ -220,6 +220,22 @@
 				-webkit-appearance : none ;
 				display:none;
 			}			
+			#banner .float4 {
+				width: 8.576rem;
+				height: 1.536rem;
+				border: 0;
+				border-radius: 6px;
+				position: absolute;
+				top: 13.86rem;
+				left: 3.82rem;
+				font-size: 0.68rem;
+				color: #4f4f4f;
+				background: #fff;
+				opacity: 0.9;
+				z-index: 999;
+				-webkit-appearance : none ;
+				display:none;
+			}			
 			
 			#banner1 {
 				width: 100%;
