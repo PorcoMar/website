@@ -188,7 +188,7 @@
 				font-size: 0.512rem;
 			}
 			
-			#service1 {
+/*			#service1 {
 				width: 15.104rem;
 				height: 9.941rem;
 				background-image: url(../img/4.png);
@@ -196,7 +196,7 @@
 				margin: 0 auto;
 				margin-right: 0rem;
 				position: relative;
-			}
+			}*/
 			
 			#service1 .p1 {
 				color: #da1c40;
@@ -245,6 +245,7 @@
 				/*background: #ffb400;*/
 				/*border-radius: 6px;*/
 				/*margin: 0 auto;*/
+				float:right;
 				margin-top: 2.304rem;
 				margin-bottom: 0.64rem;
 			}
@@ -265,6 +266,7 @@
 			.end_yizhen {
 				width: 100%;
 				height: 1.56rem;
+				float:right;
 			}
 /*********************************************************在320~414即iphone5~6P竖屏时显示**********************************************************/
 			@media only screen and (min-width:320px) and (max-width:559px){		
@@ -308,8 +310,9 @@
 					height: 9.941rem;
 					background-image: url(../img/4.png);
 					background-size: 15.1rem 9.941rem;
-					margin: 0 auto;
-					margin-right: 0rem;
+					background-repeat: no-repeat;
+					float:left;
+					margin-left: 0.75rem;
 					position: relative;
 				}												
 			}
@@ -355,8 +358,9 @@
 					height: 9.941rem;
 					background-image: url(../img/4@2x.png);
 					background-size: 15.104rem 9.941rem;
-					margin: 0 auto;
-					margin-right: 0rem;
+					background-repeat: no-repeat;
+					float:left;
+					margin-left: 0.74rem;
 					position: relative;
 				}																		
 			}
@@ -402,8 +406,9 @@
 					height: 9.941rem;
 					background-image: url(../img/4@3x.png);
 					background-size: 15.104rem 9.941rem;
-					margin: 0 auto;
-					margin-right: 0rem;
+					background-repeat: no-repeat;
+					float:left;
+					margin-left: 0.75rem;
 					position: relative;
 				}																	
 			}
