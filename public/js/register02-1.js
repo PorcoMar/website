@@ -159,7 +159,12 @@
 			$(".inp3").click(function() {
 				var code = $(".inp2").val()
 				var mobile = $(".inp1").val()
-				var trackId = Math.floor(Math.random()*10000)
+//获取url的参数				
+				 var Request = new Object();
+				 Request = GetRequest();
+				 var trackId;
+				 trackId = Request["trackId"];
+				 console.log(Request,trackId);	
 
 //向后台发送处理数据  
 				$.ajax({　　
@@ -206,16 +211,7 @@
 						}
 					}
 				});
-//获取url的参数				
-				 var Request = new Object();
-				 Request = GetRequest();
-				 var phone;
-				 var code;
-				 var trackId;
-				 phone = Request["phone"];
-				 code = Request["code"];
-				 trackId = Request["trackId"];
-				 console.log(Request,phone,code,trackId);				 
+			 
 			})
 //提交结束
 				function GetRequest() {   
