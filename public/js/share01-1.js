@@ -28,13 +28,9 @@
 //获取url的参数				
 				 var Request = new Object();
 				 Request = GetRequest();
-				 var phone;
-				 var code;
 				 var trackId;
-				 phone = Request["phone"];
-				 code = Request["code"];
 				 trackId = Request["trackId"];
-				 console.log(Request,phone,code,trackId);				 
+				 console.log(Request,trackId);				 
 //GetRequest函数
 				function GetRequest() {   
 					var url = location.search; //获取url中"?"符后的字串
