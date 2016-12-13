@@ -108,6 +108,7 @@
 					url: "http://mobile.api-test.yizhenjia.com/share/shareSuc",
 					data: "trackId=" + trackId,
 					success: function(data) {
+						alert(1)
 					}
 				})
 			}
