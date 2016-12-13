@@ -237,6 +237,7 @@
 			
 			#service1 .p5 span {
 				font-size: 1.62rem;
+				font-weight:bold;
 			}
 			
 			#bottom1 {
@@ -268,56 +269,9 @@
 				height: 1.56rem;
 				float:right;
 			}
-/*********************************************************在320~414即iphone5~6P竖屏时显示**********************************************************/
-			@media only screen and (min-width:320px) and (max-width:559px){		
-				#banner {
-					width: 100%;
-					height: 11.22rem;
-					background-image: url(../img/banner拷贝.png);
-					background-size: 100% 11.22rem;
-					/*margin-top: 1.835rem;*/
-				}
-				#share1 {
-					width: 14.165rem;
-					height: 9.472rem;
-					background-image: url(../img/1.png);
-					background-size: 14.165rem 9.472rem;
-					margin: 0 auto;
-					margin-top: -1.8rem;
-					position: relative;
-				}	
-				#register1 {
-					width: 14.165rem;
-					height: 9.472rem;
-					background-image: url(../img/2.png);
-					background-size: 14.165rem 9.472rem;
-					margin: 0 auto;
-					position: relative;
-					margin-top: 0.683rem;
-				}		
-				#success1 {
-					width: 14.165rem;
-					height: 9.472rem;
-					background-image: url(../img/3.png);
-					background-size: 14.165rem 9.472rem;
-					margin: 0 auto;
-					position: relative;
-					margin-top: 0.683rem;
-					margin-bottom: 0.64rem;
-				}	
-				#service1 {
-					width: 15rem;
-					height: 9.941rem;
-					background-image: url(../img/4.png);
-					background-size: 15rem 9.941rem;
-					background-repeat: no-repeat;
-					float:right;
-					margin-right:0.01rem;
-					position: relative;
-				}												
-			}
-/*********************************************************在560~760即iphone5~6P横屏时显示**********************************************************/
-			@media only screen and (min-width:560px) and (max-width:760px){		
+
+/*********************************************************在560~760即iphone5~6横屏时显示**********************************************************/
+			@media only screen and (min-width:320px) and (max-width:410px){		
 				#banner {
 					width: 100%;
 					height: 11.22rem;
@@ -365,7 +319,7 @@
 				}																		
 			}
 /*********************************************************在大于768即ipad竖屏时显示**********************************************************/
-			@media only screen and (min-width:768px){		
+			@media only screen and (min-width:413px){		
 				#banner {
 					width: 100%;
 					height: 11.22rem;
