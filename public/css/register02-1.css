@@ -311,24 +311,10 @@
 				width: 100%;
 				height: 1.56rem;
 			}
-			/*********************************************************在320~414即iphone5~6P竖屏时显示**********************************************************/
-			
-			@media only screen and (min-width:320px) and (max-width:559px) {
-				#banner {
-					width: 16rem;
-					height: 19.63rem;
-					background-image: url(../img/02-1分享有礼-分享页_02.png);
-					background-repeat: no-repeat;
-					background-size: 16rem 11.22rem;
-					background-color: #f43155;
-					/*margin-top: 1.835rem;*/
-					overflow: hidden;
-					position: relative;
-				}
-			}
+
 			/*********************************************************在560~760即iphone5~6P横屏时显示**********************************************************/
 			
-			@media only screen and (min-width:560px) and (max-width:760px) {
+			@media only screen and (min-width:320px) and (max-width:410px) {
 				#banner {
 					width: 16rem;
 					height: 19.63rem;
@@ -343,7 +329,7 @@
 			}
 			/*********************************************************在大于768即ipad竖屏时显示**********************************************************/
 			
-			@media only screen and (min-width:768px) {
+			@media only screen and (min-width:413px) {
 				#banner {
 					width: 16rem;
 					height: 19.63rem;

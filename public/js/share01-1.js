@@ -60,17 +60,31 @@
 					success: function(data) {
 						console.log(data)
 						console.log(data.result)
-						$("#share1 .p4").find(".sp1").html(data.result.shareCount)
-						$("#share1 .p4 .sp2").html(data.result.share).css({
+						if(data.code=="CM005"){
+							$("#share1 .p4 .sp2").css({
 							"color": "#00a3e2"
 						})
-						$("#register1 .p4").find(".sp1").html(data.result.shareRegCount)
-						$("#register1 .p4 .sp2").html(data.result.shareReg).css({
+							$("#register1 .p4 .sp2").css({
 							"color": "#00a3e2"
 						})
-						$("#success1 .p4").find("span").html(data.result.cash).css({
+							$("#success1 .p4").find("span").css({
 							"color": "#00a3e2"
 						})
+						}else{
+
+							$("#share1 .p4").find(".sp1").html(data.result.shareCount)
+							$("#share1 .p4 .sp2").html(data.result.share).css({
+								"color": "#00a3e2"
+							});
+							$("#register1 .p4").find(".sp1").html(data.result.shareRegCount)
+							$("#register1 .p4 .sp2").html(data.result.shareReg).css({
+								"color": "#00a3e2"
+							});
+							$("#success1 .p4").find("span").html(data.result.cash).css({
+								"color": "#00a3e2"
+							});
+						
+						}
 					}
 				})
 
