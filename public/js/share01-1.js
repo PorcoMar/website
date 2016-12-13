@@ -46,6 +46,21 @@
 				trackId = Request["trackId"];
 				console.log(Request, trackId);
 				//GetRequest函数
+				
+				
+			share_success_callback()
+			function share_success_callback() {
+				$.ajax({
+					type: "get",
+					dataType: "json",
+					url: "http://mobile.api-test.yizhenjia.com/share/shareSuc",
+					data: "trackId=" + trackId,
+					success: function(data) {
+						alert(1)
+					}
+				})
+			}				
+				
 				function GetRequest() {
 					var url = location.search; //获取url中"?"符后的字串
 					var theRequest = new Object();
@@ -96,20 +111,8 @@
 						}
 					}
 				})
+				
 
 			}
-			$(".hotpoint").click(function() {
-				alert("返回")
-			})
-			function share_success_callback() {
-				$.ajax({
-					type: "get",
-					dataType: "json",
-					url: "http://mobile.api-test.yizhenjia.com/share/shareSuc",
-					data: "trackId=" + trackId,
-					success: function(data) {
-						alert(1)
-					}
-				})
-			}
+
 		})(Zepto)
