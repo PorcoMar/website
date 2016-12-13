@@ -20,11 +20,20 @@
 						myScroll.refresh()
 					}
 					Refresh()*/
-/*			if(navigator.userAgent.match(/MicroMessenger/i)) {
-				var weixinShareLogo = 'http://path/to/your/image.png';
-				$('body').prepend('<div style=" overflow:hidden; width:0px; height:0; margin:0 auto; position:absolute; top:-800px;"><img src="' + weixinShareLogo + '"></div>')
-			};
-*/
+/*		wx.onMenuShareAppMessage({
+		    title: '', // 分享标题
+		    desc: '', // 分享描述
+		    link: '', // 分享链接
+		    imgUrl: '', // 分享图标
+		    type: '', // 分享类型,music、video或link，不填默认为link
+		    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		    success: function () { 
+		        // 用户确认分享后执行的回调函数
+		    },
+		    cancel: function () { 
+		        // 用户取消分享后执行的回调函数
+		    }
+		});*/
 			/********调数据*******/
 			ajax();
 
@@ -92,20 +101,14 @@
 			$(".hotpoint").click(function() {
 				alert("返回")
 			})
-			$("#bottom1").on("click", function() {
+			function share_success_callback() {
 				$.ajax({
 					type: "get",
 					dataType: "json",
 					url: "http://mobile.api-test.yizhenjia.com/share/shareSuc",
 					data: "trackId=" + trackId,
 					success: function(data) {
-						if(data.code == 0) { //成功的处理  
-							console.log(data.code)
-							alert("分享到微信")
-						} else {
-							alert(data.errorMsg)
-						}
 					}
 				})
-			})
+			}
 		})(Zepto)
