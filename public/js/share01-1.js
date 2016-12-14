@@ -43,16 +43,14 @@
 				//获取url的参数				
 				var Request = new Object();
 				Request = GetRequest();
-				var trackId1;
-				trackId1 = Request["trackId"];
-				var trackId=encodeURIComponent(trackId1);
+				var trackId = Request["trackId"];
 				console.log(Request, trackId);
 				//GetRequest函数
 				
 				
 			//share_success_callback()
 			
-				$("meta[name='share_url']").attr("content","http://yizhenjia.com/register02-1.html?trackId="+trackId);
+				$("meta[name='share_url']").attr("content","http://yizhenjia.com/register02-1.html?trackId="+encodeURIComponent(trackId));
 				
 				function GetRequest() {
 					var url = location.search; //获取url中"?"符后的字串
@@ -77,17 +75,7 @@
 					success: function(data) {
 						console.log(data)
 						console.log(data.result)
-						if(data.code=="CM005"){
-							$("#share1 .p4 .sp2").css({
-							"color": "#00a3e2"
-						})
-							$("#register1 .p4 .sp2").css({
-							"color": "#00a3e2"
-						})
-							$("#success1 .p4").find("span").css({
-							"color": "#00a3e2"
-						})
-						}else{
+						if(data.code=="0"){
 
 							$("#share1 .p4").find(".sp1").html(data.result.shareCount)
 							$("#share1 .p4 .sp2").html(data.result.share).css({
@@ -100,6 +88,18 @@
 							$("#success1 .p4").find("span").html(data.result.cash).css({
 								"color": "#00a3e2"
 							});
+
+						}else{
+
+							$("#share1 .p4 .sp2").css({
+							"color": "#00a3e2"
+							})
+								$("#register1 .p4 .sp2").css({
+								"color": "#00a3e2"
+							})
+								$("#success1 .p4").find("span").css({
+								"color": "#00a3e2"
+							})
 						
 						}
 					}
