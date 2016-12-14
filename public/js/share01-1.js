@@ -48,7 +48,7 @@
 				//GetRequest函数
 				
 				
-			share_success_callback()
+			
 			function share_success_callback() {
 				$.ajax({
 					type: "get",
