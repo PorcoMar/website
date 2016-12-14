@@ -76,7 +76,7 @@
 			var curCount; //当前剩余秒数  
 
 			function sendMessage() {
-				var mobile = document.getElementById("mobile").value;
+				var mobile = encodeURIComponent($("#mobile").val());
 				//validatemobile(mobile);//调用上边的方法验证手机号码的正确性  
 				if(mobile.length == 0) {
 					alert('请输入手机号码！');
