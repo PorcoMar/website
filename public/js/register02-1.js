@@ -198,6 +198,7 @@
 								"background": "#FFB400"
 							})
 							$("body").one("click", function() { //只执行一次
+								window.location.href=window.location.href;
 								window.location.reload();
 								window.clearInterval(InterValObj);
 								$(".float1").hide()
@@ -210,7 +211,7 @@
 							})
 						}else if(data.code == "CM005"){
 							$(".float4").show();
-							$("body").one("click",function() {
+							$(document.body).one("click",function() {
 								$(".float4").hide();
 								window.clearInterval(InterValObj);
 								$(".float1").hide()
@@ -219,7 +220,8 @@
 								$(".btn1").val("发送验证码").css({
 									"background": "#FFB400"
 								})
-								window.location.reload(true);
+								window.location.href=window.location.href;
+								window.location.reload();
 								
 							})
 						}
