@@ -11,6 +11,46 @@
     <div id="shareImage" style="display: none;">
         <img src="img/logo_s.png" />
     </div>
+    <script src="js/zepto.js"></script>
+    <script type="text/javascript">
+			function alertShow(){
+				alert("分享成功")
+			}
+
+			function share_success_callback() {
+				//获取url的参数				
+				var Request = new Object();
+				Request = GetRequest();
+				var trackId;
+				trackId = Request["trackId"];
+				console.log(Request, trackId);
+				//GetRequest函数
+				function GetRequest() {
+					var url = location.search; //获取url中"?"符后的字串
+					var theRequest = new Object();
+					if(url.indexOf("?") != -1) {
+						var str = url.substr(1);
+						strs = str.split("&");
+						for(var i = 0; i < strs.length; i++) {
+							theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+						}
+					} else {
+						console.log("url..?参数为空")
+					}
+					return theRequest;
+				}
+				
+				$.ajax({
+					type: "get",
+					dataType: "json",
+					url: "http://mobile.api-test.yizhenjia.com/share/shareSuc",
+					data: "trackId=" + trackId,
+					success:function(data){
+						alertShow()
+					}
+				})
+			}				
+    </script>
 </head>
 
 <body>
@@ -44,7 +84,7 @@
     </section>
     <section class="end_yizhen"></section>
 </body>
-<script src="js/zepto.js"></script>
+
 <script src="js/share01-1.js"></script>
 
 </html>

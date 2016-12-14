@@ -1,8 +1,5 @@
 		(function($) {
-		alertShow();
-			function alertShow(){
-				alert("hello");
-			}
+
 			/* 长宽占位 rem算法, 根据root的rem来计算各元素相对rem, 默认html 320/16 = 20px */
 			function placeholderPic() {
 				var w = document.documentElement.offsetWidth;
@@ -28,7 +25,7 @@
 		    title: '', // 分享标题
 		    desc: '', // 分享描述
 		    link: '', // 分享链接
-		    imgUrl: '', // 分享图标
+		    imgUrl: 'img/logo_s.png', // 分享图标
 		    type: '', // 分享类型,music、video或link，不填默认为link
 		    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
 		    success: function () { 
@@ -53,14 +50,7 @@
 				
 				
 			//share_success_callback()
-			function share_success_callback() {
-				$.ajax({
-					type: "get",
-					dataType: "json",
-					url: "http://mobile.api-test.yizhenjia.com/share/shareSuc",
-					data: "trackId=" + trackId,
-				})
-			}			
+			
 
 				
 				function GetRequest() {
