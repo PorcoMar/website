@@ -104,15 +104,7 @@
 				position: relative;
 			}
 			
-			#banner .yizhen_logo {
-				position: absolute;
-				width: 4.18rem;
-				height: 2.56rem;
-				left: 5.91rem;
-				top: 0.85rem;
-				background-image: url(../img/lALOj41wc8y0zQEm_294_180.png);
-				background-size: 4.18rem 2.56rem;
-			}
+
 			
 			#banner .inp1 {
 				border: 0;
@@ -326,6 +318,15 @@
 					overflow: hidden;
 					position: relative;
 				}
+			#banner .yizhen_logo {
+				position: absolute;
+				width: 4.18rem;
+				height: 2.56rem;
+				left: 5.91rem;
+				top: 0.77rem;
+				background-image: url(../img/lALOkSwMbMy0zQEm_294_180.png);
+				background-size: 4.18rem 2.56rem;
+			}				
 			}
 			/*********************************************************在大于768即ipad竖屏时显示**********************************************************/
 			
@@ -341,6 +342,15 @@
 					overflow: hidden;
 					position: relative;
 				}
+			#banner .yizhen_logo {
+				position: absolute;
+				width: 4.18rem;
+				height: 2.56rem;
+				left: 5.91rem;
+				top: 0.77rem;
+				background-image: url(../img/lALOkSwMa80BDs0BuQ_441_270.png);
+				background-size: 4.18rem 2.56rem;
+			}				
 			}
 			/***************解决在qq浏览器下fixed失效回弹卡顿效果**********************************/
 			
