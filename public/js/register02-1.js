@@ -157,13 +157,13 @@
 
 /*立即领取 提交*/
 			$(".inp3").click(function() {
-				var code = $(".inp2").val()
-				var mobile = $(".inp1").val()
+				var code = encodeURIComponent($(".inp2").val());
+				var mobile = encodeURIComponent($(".inp1").val());
 //获取url的参数				
 				 var Request = new Object();
 				 Request = GetRequest();
 				 var trackId;
-				 trackId = Request["trackId"];
+				 trackId = encodeURIComponent(Request["trackId"]);
 				 console.log(Request,trackId);	
 
 //向后台发送处理数据  

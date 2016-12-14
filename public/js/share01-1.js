@@ -43,15 +43,16 @@
 				//获取url的参数				
 				var Request = new Object();
 				Request = GetRequest();
-				var trackId;
-				trackId = Request["trackId"];
+				var trackId1;
+				trackId1 = Request["trackId"];
+				var trackId=encodeURIComponent(trackId1);
 				console.log(Request, trackId);
 				//GetRequest函数
 				
 				
 			//share_success_callback()
 			
-
+				$("meta[name='share_url']").attr("content","http://yizhenjia.com/register02-1.html?trackId="+trackId);
 				
 				function GetRequest() {
 					var url = location.search; //获取url中"?"符后的字串
