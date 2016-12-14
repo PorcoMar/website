@@ -163,7 +163,7 @@
 				 var Request = new Object();
 				 Request = GetRequest();
 				 var trackId;
-				 trackId = encodeURIComponent(Request["trackId"]);
+				 trackId =Request["trackId"];
 				 console.log(Request,trackId);	
 
 //向后台发送处理数据  
