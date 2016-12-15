@@ -31,7 +31,7 @@
 			})
 /*验证终端跳转下载页面*/			
 			$("#inp_btn").click(function(){
-				var u = navigator.userAgent;
+/*				var u = navigator.userAgent;
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
@@ -42,7 +42,20 @@
 				}
 				else{
 					alert("不支持您的系统")
-				}				
+				}	*/
+				window.location.href="http://android.myapp.com/"
+			})
+			$(".ban1").click(function(){
+				window.location.href="http://android.myapp.com/"				
+			})
+			$(".ban2").click(function(){
+				window.location.href="http://android.myapp.com/"				
+			})
+			$(".ban3").click(function(){
+				window.location.href="http://android.myapp.com/"				
+			})
+			$(".ban4").click(function(){
+				window.location.href="http://android.myapp.com/"				
 			})
 			/*发送验证码*/
 			/*			$(".btn1").click(function(){
@@ -179,51 +192,22 @@
 					},
 					　　success: function(data) {
 						console.log(data)
+						var inp1 = $(".inp1").val();
 						if(data.code == 0) { //成功的处理  
 							$(".float3").show()
 							setTimeout(show,1000);
 							function show(){
 							window.location.href = "success02-2.html"
 							}
-						} else if(data.code == "CM004") { //失败的处理  
-							var _val2 = $(".inp1").val();
-							$(".float2").show();
-							$("body").one("click", function() {
-								$(".float2").hide();
-							})
-						} else if(data.code == "CM006") { //已经抢过红包了
-							$(".float1").show();
-							window.clearInterval(InterValObj);
-							$(".btn1").val("发送验证码").css({
-								"background": "#FFB400"
-							})
-							$("body").one("click", function() { //只执行一次
-								window.location.href=window.location.href;
-								window.location.reload();
-								window.clearInterval(InterValObj);
-								$(".float1").hide()
-								$(".inp1").val("请输入您的手机号")
-								$(".inp2").val("请输入验证码")
-								$(".btn1").val("发送验证码").css({
-									"background": "#FFB400"
-								})
-
-							})
-						}else if(data.code == "CM005"){
-							$(".float4").show();
-							$(document.body).one("click",function() {
-								$(".float4").hide();
-								window.clearInterval(InterValObj);
-								$(".float1").hide()
-								$(".inp1").val("请输入您的手机号")
-								$(".inp2").val("请输入验证码")
-								$(".btn1").val("发送验证码").css({
-									"background": "#FFB400"
-								})
-								window.location.href=window.location.href;
-								window.location.reload();
-								
-							})
+						}else{
+							
+							$(".float5").val(data.errorMsg)
+							$(".float5").show()
+							setTimeout(show,2000);
+							function show(){
+							$(".float5").hide();
+							$(".inp1").val(inp1)
+							}							
 						}
 					}
 				});
@@ -246,3 +230,4 @@
 				} 	
 								
 		})(Zepto)
+		
