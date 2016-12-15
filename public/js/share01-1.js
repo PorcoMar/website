@@ -50,7 +50,7 @@
 				
 			//share_success_callback()
 			
-				$("meta[name='share_url']").attr("content","http://yizhenjia.com/register02-1.html?trackId="+encodeURIComponent(trackId));
+				$("meta[name='share_url']").attr("content","http://yizhenjia.com/register02-1.html?trackId="+trackId);
 				
 				function GetRequest() {
 					var url = location.search; //获取url中"?"符后的字串
