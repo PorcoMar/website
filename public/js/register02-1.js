@@ -234,29 +234,30 @@
 						trackId: trackId
 					},
 					　　success: function(data) {
-						console.log(data)
-						var inp1 = $(".inp1").val();
-						if(data.code == 0) { //成功的处理  
-							$(".float3").show()
-							setTimeout(show,1000);
-							function show(){
-								window.location.href = "success02-2.html?ttt"
-							}
-						}else if(data.code == "CM007"){
-							$(".float5").show();
-							setTimeout(show,2000);
-							function show(){
-								$(".float5").hide();
-							}
-						}else{
-							$(".float4").val(data.errorMsg)
-							$(".float4").show()
-							setTimeout(show,2000);
-							function show(){
-								$(".float4").hide();
-								$(".inp1").val(inp1)
-							}							
-						}
+						window.location.href = "success02-2.html?ttt=123"
+						// console.log(data)
+						// var inp1 = $(".inp1").val();
+						// if(data.code == 0) { //成功的处理  
+						// 	$(".float3").show()
+						// 	setTimeout(show,1000);
+						// 	function show(){
+						// 		window.location.href = "success02-2.html?ttt"
+						// 	}
+						// }else if(data.code == "CM007"){
+						// 	$(".float5").show();
+						// 	setTimeout(show,2000);
+						// 	function show(){
+						// 		$(".float5").hide();
+						// 	}
+						// }else{
+						// 	$(".float4").val(data.errorMsg)
+						// 	$(".float4").show()
+						// 	setTimeout(show,2000);
+						// 	function show(){
+						// 		$(".float4").hide();
+						// 		$(".inp1").val(inp1)
+						// 	}							
+						// }
 					}
 				});
 			 
