@@ -31,31 +31,74 @@
 			})
 /*验证终端跳转下载页面*/			
 			$("#inp_btn").click(function(){
-/*				var u = navigator.userAgent;
+				var u = navigator.userAgent;
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
 					window.location.href="http://android.myapp.com/"
 				}
 				else if(isiOS){					
-				window.location.href="https://itunes.apple.com/us/genre/ios/id36?mt=8"
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
 				}
 				else{
 					alert("不支持您的系统")
-				}	*/
-				window.location.href="http://app.qq.com/"
+				}
 			})
 			$(".ban1").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://android.myapp.com/"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}			
 			})
 			$(".ban2").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://android.myapp.com/"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}				
 			})
 			$(".ban3").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://android.myapp.com/"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}				
 			})
 			$(".ban4").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://android.myapp.com/"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}			
 			})
 			/*发送验证码*/
 			/*			$(".btn1").click(function(){
@@ -197,7 +240,7 @@
 							$(".float3").show()
 							setTimeout(show,1000);
 							function show(){
-							window.location.href = "success02-2.html"
+								window.location.href = "success02-2.html"
 							}
 						}else if(data.code == "CM007"){
 							$(".float5").show();

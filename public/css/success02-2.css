@@ -67,7 +67,7 @@
 			header {
 				width: 16rem;
 				height: 1.835rem;
-				background: url(../img/return.gif) no-repeat 0.725rem 0.469rem;
+				background: url(http://appimg.yizhenjia.com/share/return.gif) no-repeat 0.725rem 0.469rem;
 				background-size: 0.427rem 0.853rem;
 				background-color: #fffbf5;
 				position: fixed;
@@ -96,7 +96,7 @@
 			#banner {
 				width: 16rem;
 				height: 19.63rem;
-				background-image: url(../img/tupian_02@2x.png);
+				background-image: url(http://appimg.yizhenjia.com/share/tupian_022x.png);
 				background-repeat: no-repeat;
 				background-size: 16rem 16.768rem;
 				background-color: #f43155;
@@ -111,14 +111,14 @@
 				height: 2.56rem;
 				left: 5.85rem;
 				top: 9.77rem;
-				background-image: url(../img/lALOkSwMbMy0zQEm_294_180.png);
+				background-image: url(http://appimg.yizhenjia.com/share/lALOkSwMbMy0zQEm_294_180.png);
 				background-size: 4.18rem 2.56rem;
 			}
 			
 			#banner .yizhen_caishen {
 				width: 4.992rem;
 				height: 5.67rem;
-				background-image: url(../img/caishen@2x.png);
+				background-image: url(http://appimg.yizhenjia.com/share/caishen2x.png);
 				background-size: 4.992rem 5.67rem;
 				position: absolute;
 				top: 6rem;
@@ -149,7 +149,7 @@
 			#banner1 .ban_yizhen {
 				width: 16rem;
 				height: 2.197rem;
-				background-image: url(../img/yizhenjia.jpg);
+				background-image: url(http://appimg.yizhenjia.com/share/yizhenjia.jpg);
 				background-size: 16rem 2.197rem;
 			}
 			
@@ -163,7 +163,7 @@
 				float: left;
 				width: 6.912rem;
 				height: 6.912rem;
-				background: url(../img/yuesao.jpg);
+				background: url(http://appimg.yizhenjia.com/share/yuesao.jpg);
 				background-size: 6.912rem 6.912rem;
 				margin-right: 0.786rem;
 				margin-bottom: 0.45rem;
@@ -173,7 +173,7 @@
 				float: left;
 				width: 6.912rem;
 				height: 6.912rem;
-				background: url(../img/baby.jpg);
+				background: url(http://appimg.yizhenjia.com/share/baby.jpg);
 				background-size: 6.912rem 6.912rem;
 				margin-bottom: 0.45rem;
 			}
@@ -182,7 +182,7 @@
 				float: left;
 				width: 6.912rem;
 				height: 6.912rem;
-				background: url(../img/xiufu.jpg);
+				background: url(http://appimg.yizhenjia.com/share/xiufu.jpg);
 				background-size: 6.912rem 6.912rem;
 				margin-right: 0.786rem;
 			}
@@ -191,7 +191,7 @@
 				float: left;
 				width: 6.912rem;
 				height: 6.912rem;
-				background: url(../img/huisuo.jpg);
+				background: url(http://appimg.yizhenjia.com/share/huisuo.jpg);
 				background-size: 6.912rem 6.912rem;
 			}
 			
@@ -227,7 +227,7 @@
 				#banner {
 					width: 16rem;
 					height: 19.63rem;
-					background-image: url(../img/tupian_02@2x.png);
+					background-image: url(http://appimg.yizhenjia.com/share/tupian_02t2x.png);
 					background-repeat: no-repeat;
 					background-size: 16rem 16.768rem;
 					background-color: #f43155;
@@ -238,7 +238,7 @@
 				#banner .yizhen_caishen {
 					width: 4.992rem;
 					height: 5.67rem;
-					background-image: url(../img/caishen@2x.png);
+					background-image: url(http://appimg.yizhenjia.com/share/caishent2x.png);
 					background-size: 4.992rem 5.67rem;
 					position: absolute;
 					top: 6rem;
@@ -251,7 +251,7 @@
 				#banner {
 					width: 16rem;
 					height: 19.63rem;
-					background-image: url(../img/tupian_02@3x.png);
+					background-image: url(http://appimg.yizhenjia.com/share/tupian_02t3x.png);
 					background-repeat: no-repeat;
 					background-size: 16rem 16.768rem;
 					background-color: #f43155;
@@ -262,7 +262,7 @@
 				#banner .yizhen_caishen {
 					width: 4.992rem;
 					height: 5.67rem;
-					background-image: url(../img/caishen@3x.png);
+					background-image: url(http://appimg.yizhenjia.com/share/caishent3x.png);
 					background-size: 4.992rem 5.67rem;
 					position: absolute;
 					top: 6rem;
