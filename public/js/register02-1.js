@@ -240,7 +240,7 @@
 							$(".float3").show()
 							setTimeout(show,1000);
 							function show(){
-								window.location.href = "success02-2.html"
+								window.location.href = "success02-2.html?ttt"
 							}
 						}else if(data.code == "CM007"){
 							$(".float5").show();
