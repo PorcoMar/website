@@ -35,7 +35,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://android.myapp.com/"
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -49,7 +49,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://android.myapp.com/"
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -63,7 +63,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://android.myapp.com/"
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -77,7 +77,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://android.myapp.com/"
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -91,7 +91,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://android.myapp.com/"
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -161,7 +161,7 @@
  //向后台传入phone参数  
 					$.ajax({　　
 						type: "post",　　
-						url: 'http://mobile.api-test.yizhenjia.com/share/getCode', 
+						url: 'http://appapi.yizhenjia.com/share/getCode', 
 						dataType: "json", 
 						data: "phone=" + mobile,
 						　　success: function(data) {
@@ -226,7 +226,7 @@
 				$.ajax({　　
 					type: "post",
 					//url: 'http://mobile.api-test.yizhenjia.com/share/receive?code='+code+'&phone='+mobile+'&trackId=12',
-					url: 'http://mobile.api-test.yizhenjia.com/share/receive',
+					url: 'http://appapi.yizhenjia.com/share/receive',
 					dataType: "json",
 					data: {
 						code: code,

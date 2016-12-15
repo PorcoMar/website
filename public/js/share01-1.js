@@ -70,7 +70,7 @@
 				$.ajax({
 					type: "post",
 					dataType: "json",
-					url: "http://mobile.api-test.yizhenjia.com/share/account",
+					url: "http://appapi.yizhenjia.com/share/account",
 					data: "trackId=" + trackId,
 					success: function(data) {
 						console.log(data)

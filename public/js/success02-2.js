@@ -18,22 +18,88 @@
 			//Scroll();
 
 			$(".hotpoint").click(function() {
-				window.location.href="register02-1.html"
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}
 			})
 
 			$(".ban1").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}		
 			})
 			$(".ban2").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}				
 			})
 			$(".ban3").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}				
 			})
 			$(".ban4").click(function(){
-				window.location.href="http://app.qq.com/"				
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}			
 			})
 			$(".btn1").click(function() {
-				window.location.href="http://app.qq.com/"
+				var u = navigator.userAgent;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
+				if(isAndroid){
+					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+				}
+				else if(isiOS){					
+				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				}
+				else{
+					alert("不支持您的系统")
+				}
 			})
 		})(Zepto)
