@@ -76,7 +76,7 @@
 						console.log(data)
 						console.log(data.result)
 						if(data.code=="0"){
-
+							
 							$("#share1 .p4").find(".sp1").html(data.result.shareCount)
 							$("#share1 .p4 .sp2").html(data.result.share).css({
 								"color": "#00a3e2"
@@ -90,7 +90,7 @@
 							});
 
 						}else{
-
+							
 							$("#share1 .p4 .sp2").css({
 							"color": "#00a3e2"
 							})
