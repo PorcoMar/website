@@ -43,19 +43,19 @@
 				else{
 					alert("不支持您的系统")
 				}	*/
-				window.location.href="http://android.myapp.com/"
+				window.location.href="http://app.qq.com/"
 			})
 			$(".ban1").click(function(){
-				window.location.href="http://android.myapp.com/"				
+				window.location.href="http://app.qq.com/"				
 			})
 			$(".ban2").click(function(){
-				window.location.href="http://android.myapp.com/"				
+				window.location.href="http://app.qq.com/"				
 			})
 			$(".ban3").click(function(){
-				window.location.href="http://android.myapp.com/"				
+				window.location.href="http://app.qq.com/"				
 			})
 			$(".ban4").click(function(){
-				window.location.href="http://android.myapp.com/"				
+				window.location.href="http://app.qq.com/"				
 			})
 			/*发送验证码*/
 			/*			$(".btn1").click(function(){
@@ -199,14 +199,19 @@
 							function show(){
 							window.location.href = "success02-2.html"
 							}
-						}else{
-							
-							$(".float5").val(data.errorMsg)
-							$(".float5").show()
+						}else if(data.code == "CM007"){
+							$(".float5").show();
 							setTimeout(show,2000);
 							function show(){
-							$(".float5").hide();
-							$(".inp1").val(inp1)
+								$(".float5").hide();
+							}
+						}else{
+							$(".float4").val(data.errorMsg)
+							$(".float4").show()
+							setTimeout(show,2000);
+							function show(){
+								$(".float4").hide();
+								$(".inp1").val(inp1)
 							}							
 						}
 					}

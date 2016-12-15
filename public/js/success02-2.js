@@ -20,7 +20,20 @@
 			$(".hotpoint").click(function() {
 				window.location.href="register02-1.html"
 			})
+
+			$(".ban1").click(function(){
+				window.location.href="http://app.qq.com/"				
+			})
+			$(".ban2").click(function(){
+				window.location.href="http://app.qq.com/"				
+			})
+			$(".ban3").click(function(){
+				window.location.href="http://app.qq.com/"				
+			})
+			$(".ban4").click(function(){
+				window.location.href="http://app.qq.com/"				
+			})
 			$(".btn1").click(function() {
-				alert("立即使用")
+				window.location.href="http://app.qq.com/"
 			})
 		})(Zepto)
