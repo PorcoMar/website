@@ -43,7 +43,7 @@
 				//获取url的参数				
 				var Request = new Object();
 				Request = GetRequest();
-				var trackId = Request["trackId"];
+				var trackId = encodeURIComponent(Request["trackId"]);
 				console.log(Request, trackId);
 				//GetRequest函数
 				
