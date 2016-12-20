@@ -4,9 +4,9 @@
 .header{height: 50px;width: 100%;position: fixed;z-index: 99;left: 0;top: 0;}	
 .header .copy{height: 50px;padding: 0 2%;position: fixed;z-index: -1;left: 0;top: 0;background: #fff;width: 100%;opacity: 0.6;filter: alpha(opacity=60)}
 .header .log {font-size:0;width:100%;height:100%;margin:0 auto;}
-.header .log img{margin-right: 30px;display:block;float:left;}
-.header .log img.img1{margin-top:10px;cursor:pointer;margin-left:19%;}
-.header .log img.img2{margin-top:10px;cursor:pointer;}
+.header .log img{margin-right: 10px;display:inline-block;float:left;}
+.header .log img.img1{width:57px;height:29px;margin-top:10px;cursor:pointer;margin-left:19%;}
+.header .log img.img2{width:77px;height:25px;margin-top:10px;cursor:pointer;}
 .header .nav a{color: #666;font-size: 16px;margin-left:28px;border-bottom: 2px solid #fff;padding-bottom: 5px;}
 .header .nav a:hover{border-bottom: 2px solid #D26D57;}
 .header .nav a.current{border-bottom: 2px solid #D26D57;}
@@ -20,13 +20,13 @@
 	#section1{width:100%;height:100%;background: url(../images/1_02.jpg) no-repeat center top;background-color:#f6f6f6}
 	#section2{width:100%;height:100%;background: url(../images/1_03.jpg) no-repeat center top;background-color:#fbf9fa ;}
 	#section3{width:100%;height:100%;background: url(../images/1_04.jpg) no-repeat center top;background-color:#fefefe}
-	#section4{width:100%;height:100%;background: url(../images/page5.jpg) no-repeat center top;position:relative;background-color:#4a4a4a}	
+	#section4{width:100%;height:100%;background: url(../images/page5.jpg) no-repeat center top;position:relative;}	
 	#btto{width:100%;height:20%;position:absolute;bottom:0;background:#fffdfe;z-index:998;}			
 	#btto .btto{width:100%;height:45%;background:#4a4a4a;position:absolute;bottom:0;color:#fff;}
 	#btto .btto p{text-align:center;display:block;}
 	#btto .btto p.p1{line-height:32px;font-size:20px;height:32px;margin-top:8px;}
 	#btto .btto p.p2{line-height:20px;font-size:14px;height:14px;color:#a7a7a7;}
-	#btto .btto p.p3{line-height:12px;font-size:12px;height:12px;color:#a7a7a7;margin-top:13px;}
+	#btto .btto p.p3{line-height:12px;font-size:12px;height:12px;color:#a7a7a7;margin-top:8px;}
 }
 @media only screen and (min-width:1919px) and (max-width:2400px) {
 	body{min-width:1280px;min-height:649.2px;}
@@ -95,9 +95,8 @@
 			#section4{display:none;}	
 			#fixd{display:none;} 
 			#fullpage{display:none;}
-			#fullPage-nav{display:none;}
-			#container{display:block;}  
-			#container img{display:block;height:100%;} 
+			#fullPage-nav{display:none;}  
+			#container img{display:block;} 
 }
 
 

@@ -15,7 +15,7 @@ $(function(){
 $(function() {
 	var w = document.documentElement.offsetWidth;
 	var h = $(window).height();
-	document.title = w;
+	//document.title = w;
 		$(document).ready(function() {
 			if(w>768){
 				run();	
@@ -27,7 +27,12 @@ $(function() {
 			}
 		});
 	
-	
+		$("#header .img1").on("click",function(){
+			window.location.href = "http://yizhenjia.com/index.html"
+		})
+		$("#header .img2").on("click",function(){
+			window.location.href = "http://yizhenjia.com/index.html"
+		})
 		function run(){
 			$("#fullpage").css({"display":"block"});
 			$('#fullpage').fullpage({
