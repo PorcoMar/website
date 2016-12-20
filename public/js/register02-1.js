@@ -244,9 +244,9 @@
 								window.location.href = "success02-2.html?ttt"
 							// }
 						}else if(data.code == "CM007"){
-							$(".float5").show();
+							$(".float5").show1();
 							setTimeout(show,2000);
-							function show(){
+							function show1(){
 								$(".float5").hide();
 							}
 						}else{
