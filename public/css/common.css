@@ -3,10 +3,9 @@
 
 .header{height: 50px;width: 100%;position: fixed;z-index: 99;left: 0;top: 0;}	
 .header .copy{height: 50px;padding: 0 2%;position: fixed;z-index: -1;left: 0;top: 0;background: #fff;width: 100%;opacity: 0.6;filter: alpha(opacity=60)}
-.header .log {font-size:0;width:50%;height:100%;float:left;}
-.header .right_nav{float:left;font-size:16px;height:50px;line-height:50px;margin-left:490px;color:#000000;cursor:pointer;}
-.header .log img{margin-right: 30px;display: inline-block;}
-.header .log img.img1{margin-left:384px;margin-top:10px;cursor:pointer;}
+.header .log {font-size:0;width:100%;height:100%;margin:0 auto;}
+.header .log img{margin-right: 30px;display:block;float:left;}
+.header .log img.img1{margin-top:10px;cursor:pointer;margin-left:19%;}
 .header .log img.img2{margin-top:10px;cursor:pointer;}
 .header .nav a{color: #666;font-size: 16px;margin-left:28px;border-bottom: 2px solid #fff;padding-bottom: 5px;}
 .header .nav a:hover{border-bottom: 2px solid #D26D57;}
@@ -16,6 +15,7 @@
 
 @media only screen and (max-width:3000px) {
 	#fixd{width:12%;height:37.5%;border-radius:8px;background:url(../images/erweima.jpg) no-repeat;background-size:100%;position:fixed;top:32.5%;left:58%;z-index:999;opacity: 1;filter: alpha(opacity=100)}   
+	#fixd img{width:125px;height:125px;display:block;margin:0 auto;margin-top:35px;}
 	#section0{width:100%;height:100%;background: url(../images/1_01.jpg) no-repeat center top;background-color:#fefdf9;}
 	#section1{width:100%;height:100%;background: url(../images/1_02.jpg) no-repeat center top;background-color:#f6f6f6}
 	#section2{width:100%;height:100%;background: url(../images/1_03.jpg) no-repeat center top;background-color:#fbf9fa ;}
@@ -30,7 +30,9 @@
 }
 @media only screen and (min-width:1919px) and (max-width:2400px) {
 	body{min-width:1280px;min-height:649.2px;}
+	.header .log .right_nav{font-size:16px;height:50px;line-height:50px;color:#000000;cursor:pointer;float:right;margin-right:20%;}
 	#fixd{width:234px;height:367px;border-radius:8px;background:url(../images/erweima.jpg) no-repeat;background-size:100%;position:fixed;top:32.5%;left:58%;z-index:999;opacity: 1;filter: alpha(opacity=100)}		
+	#fixd img{width:125px;height:125px;display:block;margin:0 auto;margin-top:35px;}
 	#container{display:none;}
 /*x100%*/
 
@@ -43,7 +45,9 @@
 }
 @media only screen and (min-width:1493px) and (max-width:1919px) {	
 	body{min-width:1280px;min-height:649.2px;}	
+	.header .log .right_nav{font-size:16px;height:50px;line-height:50px;color:#000000;cursor:pointer;float:right;margin-right:20%;}	
 	#fixd{width:210.6px;height:330.3px;border-radius:8px;background:url(../images/erweima.jpg) no-repeat;background-size:100%;position:fixed;top:32.5%;left:58%;z-index:999;opacity: 1;filter: alpha(opacity=100)}
+	#fixd img{width:112.5px;height:112.5px;display:block;margin:0 auto;margin-top:31.5px;}	
 	#container{display:none;}
 /*x90%*/
 	#section2 .im1{width:70.2px;height:74.7px;background: url(../images/奶瓶.png) no-repeat;background-size:100%;position:absolute;top:37%;left:18%;}
@@ -55,7 +59,9 @@
 }
 @media only screen and (min-width:1280px) and (max-width:1493px) {	
 	body{min-width:1280px;min-height:649.2px;}	
+	.header .log .right_nav{font-size:16px;height:50px;line-height:50px;color:#000000;cursor:pointer;float:right;margin-right:20%;}	
 	#fixd{width:187.2px;height:293.6px;border-radius:8px;background:url(../images/erweima.jpg) no-repeat;background-size:100%;position:fixed;top:32.5%;left:58%;z-index:999;opacity: 1;filter: alpha(opacity=100)}
+	#fixd img{width:100px;height:100px;display:block;margin:0 auto;margin-top:28px;}	
 	#container{display:none;}
 /*x80%*/
 	#section2 .im1{width:62.4px;height:66.4px;background: url(../images/奶瓶.png) no-repeat;background-size:100%;position:absolute;top:35%;left:18%;}
@@ -68,7 +74,10 @@
 /*70*/
 @media only screen and (min-width:769px)  and (max-width:1280px) {
 	body{min-width:1280px;min-height:649.2px;}	
+	.header .log .right_nav{font-size:16px;height:50px;line-height:50px;color:#000000;cursor:pointer;position:fixed;left:957px;}
+	
 	#fixd{width:163.8px;height:256.9px;border-radius:8px;background:url(../images/erweima.jpg) no-repeat;background-size:100%;position:fixed;top:250px;left:739px;z-index:999;opacity: 1;filter: alpha(opacity=100)}	
+	#fixd img{width:87.5px;height:87.5px;display:block;margin:0 auto;margin-top:24.5px;}	
 	#container{display:none;}
 	#section2 .im1{width:54.6px;height:58.1px;background: url(../images/奶瓶.png) no-repeat;background-size:100%;position:absolute;top:37%;left:18%;}
 	#section2 .im2{width:45.5px;height:49px;background: url(../images/煲汤.png) no-repeat;background-size:100%;position:absolute;top:48%;left:33%;}
