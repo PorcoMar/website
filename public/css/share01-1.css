@@ -272,7 +272,7 @@
 
 
 /*********************************************************在560~760即iphone5~6横屏时显示**********************************************************/
-			@media only screen and (min-width:320px) and (max-width:410px){ 		
+			@media only screen and (min-width:280px) and (max-width:760px){ 		
 				#banner {
 					width: 100%;
 					height: 11.22rem;
@@ -320,7 +320,7 @@
 				}																		
 			}
 /*********************************************************在大于768即ipad竖屏时显示**********************************************************/
-			@media only screen and (min-width:413px){		
+			@media only screen and (min-width:761px){		
 				#banner {
 					width: 100%;
 					height: 11.22rem;
