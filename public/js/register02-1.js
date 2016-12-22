@@ -35,7 +35,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -49,7 +49,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -63,7 +63,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -77,7 +77,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
@@ -91,7 +91,7 @@
 				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端	
 				if(isAndroid){
-					window.location.href="http://sj.qq.com/myapp/detail.htm?apkName=com.yizhenjia"
+					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
 				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
