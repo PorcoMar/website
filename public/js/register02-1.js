@@ -244,16 +244,16 @@
 								window.location.href = "success02-2.html?ttt"
 							// }
 						}else if(data.code == "CM007"){
-							$(".float5").show1();
-							setTimeout(show,2000);
+							$(".float5").show();
+							setTimeout(show1,2000);
 							function show1(){
 								$(".float5").hide();
 							}
 						}else{
 							$(".float4").val(data.errorMsg)
 							$(".float4").show()
-							setTimeout(show,2000);
-							function show(){
+							setTimeout(show2,2000);
+							function show2(){
 								$(".float4").hide();
 								$(".inp1").val(inp1)
 							}							
