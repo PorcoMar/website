@@ -21,10 +21,10 @@
 	#section2{width:100%;height:100%;background: url(../images/1_03.jpg) no-repeat center top;background-color:#fbf9fa ;}
 	#section3{width:100%;height:100%;background: url(../images/1_04.jpg) no-repeat center top;background-color:#fefefe}
 	#section4{width:100%;height:100%;background: url(../images/page5.jpg) no-repeat center top;position:relative;}	
-	#btto{width:100%;height:20%;position:absolute;bottom:0;background:#fffdfe;z-index:998;}			
+	#btto{width:100%;height:23%;position:absolute;bottom:0;background:#fffdfe;z-index:998;}			
 	#btto .btto{width:100%;height:45%;background:#4a4a4a;position:absolute;bottom:0;color:#fff;}
 	#btto .btto p{text-align:center;display:block;}
-	#btto .btto p.p1{line-height:32px;font-size:20px;height:32px;margin-top:8px;}
+	#btto .btto p.p1{line-height:32px;font-size:20px;height:32px;margin-top:4px;}
 	#btto .btto p.p2{line-height:20px;font-size:14px;height:14px;color:#a7a7a7;}
 	#btto .btto p.p3{line-height:12px;font-size:12px;height:12px;color:#a7a7a7;margin-top:8px;}
 }
