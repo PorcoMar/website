@@ -89,7 +89,8 @@
 	#section4 .cc{width:72.1px;height:72.8px;background: url(../images/cc.png) no-repeat;background-size:100%;position:absolute;top:30%;left:42%;}	
 }
 @media only screen and (min-width:260px)  and (max-width:768px) {
-			.header{display:none;}
+			
+			#header{display:none;}
 			#section0{display:none;}
 			#section1{display:none;}
 			#section2{display:none;}
@@ -98,7 +99,9 @@
 			#fixd{display:none;} 
 			#fullpage{display:none;}
 			#fullPage-nav{display:none;}  
+			#container{position:relative;}
 			#container img{display:block;} 
+			#fir{width:7rem;height:2.5rem;position:absolute;top:10.2rem;left:4.5rem;z-index:99;}
 }
 
 
