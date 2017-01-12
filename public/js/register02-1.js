@@ -38,7 +38,7 @@
 					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
-				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else{
 					alert("不支持您的系统")
@@ -52,7 +52,7 @@
 					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
-				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else{
 					alert("不支持您的系统")
@@ -66,7 +66,7 @@
 					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
-				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else{
 					alert("不支持您的系统")
@@ -80,7 +80,7 @@
 					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
-				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else{
 					alert("不支持您的系统")
@@ -94,7 +94,7 @@
 					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else if(isiOS){					
-				window.location.href="https://itunes.apple.com/cn/app/id1148484442?mt=8"
+				window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yizhenjia"
 				}
 				else{
 					alert("不支持您的系统")
