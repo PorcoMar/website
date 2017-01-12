@@ -66,6 +66,17 @@
 					}
 					return theRequest;
 				}
+				
+				//添加样式
+				$("#share1 .p4 .sp2").css({
+				"color": "#00a3e2"
+				})
+					$("#register1 .p4 .sp2").css({
+					"color": "#00a3e2"
+				})
+					$("#success1 .p4").find("span").css({
+					"color": "#00a3e2"
+				})				
 				//ajax获取				
 				$.ajax({
 					type: "post",
@@ -102,8 +113,10 @@
 							})
 						
 						}
+					},
+					error:function(xml){
+						console.log("请求错误")
 					}
-					
 				})
 				
 

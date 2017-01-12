@@ -215,6 +215,8 @@
 			$(".inp3").click(function() {
 				var code = encodeURIComponent($(".inp2").val());
 				var mobile = encodeURIComponent($(".inp1").val());
+//执行号码验证				
+//				 validatemobile(mobile);
 //获取url的参数				
 				 var Request = new Object();
 				 Request = GetRequest();
@@ -228,6 +230,7 @@
 					//url: 'http://mobile.api-test.yizhenjia.com/share/receive?code='+code+'&phone='+mobile+'&trackId=12',
 					url: 'http://appapi.yizhenjia.com/share/receive',
 					dataType: "json",
+					crossDomain:true,
 					data: {
 						code: code,
 						phone: mobile,
@@ -258,6 +261,14 @@
 								$(".inp1").val(inp1)
 							}							
 						}
+					},
+					error: function () { 
+							$(".float4").val("请求数据错误")
+							$(".float4").show()
+							setTimeout(show2,2000);
+							function show2(){
+								$(".float4").hide();
+							}
 					}
 				});
 			 

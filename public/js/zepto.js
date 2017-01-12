@@ -1355,7 +1355,7 @@ window.$ === undefined && (window.$ = Zepto)
       xhr.overrideMimeType && xhr.overrideMimeType(mime)
     }
     if (settings.contentType || (settings.contentType !== false && settings.data && settings.type.toUpperCase() != 'GET'))
-      setHeader('Content-Type', settings.contentType || 'application/x-website-form-urlencoded')
+      setHeader('Content-Type', settings.contentType || 'application/x-www-form-urlencoded')
 
     if (settings.headers) for (name in settings.headers) setHeader(name, settings.headers[name])
     xhr.setRequestHeader = setHeader
