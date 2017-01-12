@@ -1,2 +1,2 @@
-tar -zcvf ./nodejs.tar --exclude=.git ../node_yizhen_website/
-scp nodejs.tar root@116.62.31.226:/root/
+tar -zcvf ./website.tar --exclude=.git ../node_yizhen_website/
+scp website.tar root@118.178.243.113:/alidata/www

@@ -768,7 +768,7 @@
 		 * Detecting mousewheel scrolling
 		 *
 		 * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
-		 * http://www.sitepoint.com/html5-javascript-mouse-wheel/
+		 * http://website.sitepoint.com/html5-javascript-mouse-wheel/
 		 */
 		function MouseWheelHandler(e) {
 			if(options.autoScrolling){
