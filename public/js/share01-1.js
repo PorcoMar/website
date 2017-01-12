@@ -83,6 +83,7 @@
 					dataType: "json",
 					url: "http://appapi.yizhenjia.com/share/account",
 					data: "trackId=" + trackId,
+					crossDomain:true,
 					success: function(data) {
 						console.log(data)
 						console.log(data.result)
