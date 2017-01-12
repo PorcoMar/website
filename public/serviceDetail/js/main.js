@@ -9,7 +9,8 @@ $(document).ready(function(){
     console.log("id:",id);
     //获取文章内容信息
     //http://mobile.api-test.yizhenjia.com/h5_api/serviceDesc?id=52
-    $.get("http://mobile.api-test.yizhenjia.com/h5_api/serviceDesc",{id:id},function(data){
+    //http://appapi.yizhenjia.com/h5_api/serviceDesc
+    $.get("http://appapi.yizhenjia.com/h5_api/serviceDesc",{id:id},function(data){
         console.log("data:",data);
     	data = jQuery.parseJSON(data);
     	if(data["code"] == "0"){
