@@ -1,0 +1,70 @@
+*{margin:0;padding:0;}
+#all{width:100%;height:100%;position: relative;}
+#all img{width:100%;}
+#allCont{
+	width:100%;height:100%;background:url(img/03_03_03分享H5.png));background-size:100%;position:absolute;top:0;overflow:hidden;
+}
+#topMOney{
+	width:10.67rem;height:7.9rem;margin:0 auto;margin-top:8.7rem;
+}
+#cash{
+	text-align:center;font-size:1.53rem;height:4.9rem;line-height:4.9rem;padding-top:0.68rem;color:#fff;font-weight:900;
+}
+#cashFont{
+	color:#fff;text-align:center;font-size:0.6rem;
+}
+#textInput{
+	width:12.8rem;height:7.47rem;margin:0 auto;margin-top:2.3rem;margin-bottom:2.13rem;
+}
+#textInput input{
+	height:1.96rem;font-size:0.59rem;padding-left:0.94rem;border:0;border-radius:7px;outline: none;
+}
+#textInput input[type="button"]{
+	padding-left:0;background: #ff8e33;color:#fff;
+}
+#phoneNum{
+	width:11.86rem;background: #fff;
+}
+#secInp{
+	width:12.8rem;margin-top:0.512rem;margin-bottom:0.85rem;display:flex;justify-content:space-between;
+}
+#codeNum{
+	width:6.96rem;
+}
+#secInp #getCode{
+	width:4.48rem;
+}
+#subBtn{
+	width:12.8rem;margin-bottom:0.85rem;
+}
+#actCule{
+	width:12.8rem;height:5.3rem;margin:4.3rem auto;
+}
+#titleop{
+	width:12.8rem;height:0.55rem;margin:0 auto;display:flex;justify-content: space-between;
+}
+#titleop .line{
+	width:4.69rem;height:1px;background: #fff;
+}
+#titleop .actC{
+	height:0.55rem;font-size:0.55rem;color: #fff;line-height:0rem;
+}
+#contCule{
+	height:3.2rem;width:12.8rem;font-size:0.53rem;color:#fff;line-height:1.024rem;display:flex;flex-direction:column;
+	margin:0.4rem auto;
+}
+#alertFloat{
+	width:12rem;height:5.5rem;background: #fff;position:absolute;left:2rem;top:19.6rem;z-index:99;border-radius:20px;display:none;
+}
+#alertFloat .contText{
+	font-size:0.7rem;line-height:0.768rem;text-align:center;border-bottom:1px solid #dddddd;height:2.1rem;padding-top:1.5rem;
+}
+#alertFloat .comfirmt{
+	text-align:center;color:#007aff;font-size:0.65rem;line-height:2rem;
+}
+.floatZZ{
+	width:100%;height:100%;background: #000;position:absolute;top:0;opacity: 0.5;z-index:90;display:none;
+}
+#downApp{
+	display:block;width:12.8rem;height:2.1rem;margin:0 auto;padding-left:0;background: #ff8e33;color:#fff;border:0;border-radius:7px;
+}
